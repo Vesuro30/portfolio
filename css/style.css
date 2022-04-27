@@ -11,17 +11,18 @@ body{
 header{
   display: flex;
   width: 100%;
-  height: 100px;
-  background-color: rgb(48, 56, 175);
+  height: 200px;
+  /* background-color: rgb(48, 56, 175); */
+  background-image: repeating-linear-gradient(40deg,rgb(48, 56, 175), #888 10% );
   color: #fff;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 h1{
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bolder;
-  padding: 10px 20px;
+  align-self: center;
 }
 
 nav a{
@@ -33,50 +34,62 @@ nav a{
 nav a:hover{
   color: rgb(120, 209, 18);  
 } 
+nav ul{
+  padding-bottom: 10px;
+}
 
 nav ul li{
-  display: inline;
+  display: inline-flex;
   color: #fff;
   list-style: none;
-  margin: 0 5px;
+  padding: 10px;
  }
 
 nav ul li:last-child{
   margin-right: 20px;
 }
 
+/* .heroImage{
+  height: 400px;
+  background-color: #e5e5f7;
+opacity: 0.8;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #444cf755, #444cf7 );
+} */
+
 .aside-wrapper{
   display: flex;
   align-items: center;
-  gap: 10px;
   align-content: center;
 }
 
 aside{
-  max-width: 30vw;
+  max-width: 30%;
 }
 
 aside img{
   max-width: 200px;
   max-height: 200px;
-  display: inline;
-  margin: 10px 10px 10px 0;
-
+  display: inline-flex;
+  margin: 15px 15px 15px 0;
 }
 
 footer{
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  height: 100px;
-  background-color: rgb(48, 56, 175);
+  height: 200px;
+  background-image: repeating-linear-gradient(130deg,rgb(48, 56, 175), #888 10% );
   justify-content: space-around;
   align-items: center;
   color: #fff;
   flex-direction: column;
 }
 
+footer ul{
+  align-self: center;
+}
 footer ul li{
-  display: inline;
+  display: inline-flex;
   margin: 0 5vw;
   font-size: 110%;
 }
@@ -84,9 +97,28 @@ footer ul li{
 footer a{
   color: #fff;
   font-size: 110%;
+  padding-left: 5px;
 }
+
 
 footer a:hover{
   color: rgb(120, 209, 18);
 }
 
+
+
+@media screen and (max-width: 768px) {
+   .aside-wrapper{
+    flex-direction: column;
+    
+  } 
+  } 
+  
+  @media screen and (max-width: 960px){
+    
+    header{
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+}
