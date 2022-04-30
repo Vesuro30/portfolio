@@ -9,7 +9,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
-
+/* Header section starts */
 header{
   display: flex;
   width: 100%;
@@ -21,7 +21,7 @@ header{
   justify-content: space-around;
   align-items: flex-end;
   border-radius: 10px;
-  box-shadow: 3px 6px 6px hsl(0deg 0% 0% / 0.30);
+  box-shadow: 5px 6px 6px hsl(0deg 0% 0% / 0.30);
 }
 
 h1{
@@ -55,12 +55,16 @@ nav ul li:last-child{
   margin-right: 20px;
 }
 
+/* Header ends */
+
 /* .heroImage{
   height: 400px;
   background-color: #e5e5f7;
 opacity: 0.8;
 background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #444cf755, #444cf7 );
 } */
+
+/* Aside begins */
 
 .aside-wrapper{
   display: flex;
@@ -75,8 +79,12 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e
   margin: 15px 15px 15px 0; 
   align-self: center;
   border-radius: 10px;
-  box-shadow: 3px 6px 6px hsl(0deg 0% 0% / 0.30);
+  box-shadow: 5px 6px 6px hsl(0deg 0% 0% / 0.30);
 }
+
+/* Aside ends */
+
+/* About me starts */
 
 #aboutMe{
   display: inline;
@@ -99,6 +107,10 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e
 
 */
 
+/* About me ends */
+
+/* Work section / thumbnails begin */
+
 .workHeader{
   font-weight: 800;
   color: #597536;
@@ -110,7 +122,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e
 .workImg{
   margin: 15px;
   border-radius: 26px;
-  box-shadow: 3px 6px 6px hsl(0deg 0% 0% / 0.30);
+  box-shadow: 5px 6px 6px hsl(0deg 0% 0% / 0.30);
 }
 .workImg:hover{
   opacity: .6;
@@ -136,6 +148,10 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e
 
 }
 
+/* Work section ends */
+
+/* Footer beings */
+
 footer{
   display: flex;
   flex-wrap: wrap;
@@ -149,7 +165,7 @@ footer{
   flex-direction: column;
   margin-top: 25px;
   border-radius: 10px;
-  box-shadow: 3px 6px 6px hsl(0deg 0% 0% / 0.30);
+  box-shadow: 5px 6px 6px hsl(0deg 0% 0% / 0.30);
 }
 
 
@@ -171,7 +187,9 @@ footer a:hover{
   color: #B9F570;
 }
 
+/* Footer ends */
 
+/* Media queries */
 
 @media screen and (max-width: 768px) {
    .aside-wrapper{
@@ -190,3 +208,5 @@ footer a:hover{
       align-items: center;
     }
 } 
+
+/* Media queries end */
