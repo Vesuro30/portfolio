@@ -21,6 +21,7 @@ header{
   justify-content: space-around;
   align-items: flex-end;
   border-radius: 10px;
+  box-shadow: 3px 6px 6px hsl(0deg 0% 0% / 0.30);
 }
 
 h1{
@@ -74,6 +75,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e
   margin: 15px 15px 15px 0; 
   align-self: center;
   border-radius: 10px;
+  box-shadow: 3px 6px 6px hsl(0deg 0% 0% / 0.30);
 }
 
 #aboutMe{
@@ -108,7 +110,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e
 .workImg{
   margin: 15px;
   border-radius: 26px;
-
+  box-shadow: 3px 6px 6px hsl(0deg 0% 0% / 0.30);
 }
 .workImg:hover{
   opacity: .6;
@@ -147,6 +149,7 @@ footer{
   flex-direction: column;
   margin-top: 25px;
   border-radius: 10px;
+  box-shadow: 3px 6px 6px hsl(0deg 0% 0% / 0.30);
 }
 
 
